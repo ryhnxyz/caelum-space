@@ -16,7 +16,7 @@ An immersive, scroll-driven space-exploration landing page — from Earth depart
   <img alt="Lenis" src="https://img.shields.io/badge/Lenis-1.1.14-F0B25A?style=flat-square" />
   <img alt="Static" src="https://img.shields.io/badge/build-none%20·%20static-0A0A0C?style=flat-square" />
   <img alt="Deploy" src="https://img.shields.io/badge/deploy-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
-  <a href="https://www.kryoncode.xyz"><img alt="Made by KryptonCode" src="https://img.shields.io/badge/made%20by-KryptonCode-F0B25A?style=flat-square" /></a>
+  <a href="https://www.kryptoncode.xyz"><img alt="Made by KryptonCode" src="https://img.shields.io/badge/made%20by-KryptonCode-F0B25A?style=flat-square" /></a>
 </p>
 
 </div>
@@ -167,15 +167,15 @@ caelum-space/
 
 ## ✦ Credits
 
-Designed & built by **[KryptonCode](https://www.kryoncode.xyz)**.
+Designed & built by **[KryptonCode](https://www.kryptoncode.xyz)**.
 
 <div align="center">
 <br/>
 
 **✦ CAELUM** — *Beyond Every Horizon*
 
-[![Visit KryptonCode](https://img.shields.io/badge/www.kryoncode.xyz-F0B25A?style=for-the-badge&logoColor=black)](https://www.kryoncode.xyz)
+[![Visit KryptonCode](https://img.shields.io/badge/www.kryptoncode.xyz-F0B25A?style=for-the-badge&logoColor=black)](https://www.kryptoncode.xyz)
 
-<sub>Crafted by KryptonCode · www.kryoncode.xyz</sub>
+<sub>Crafted by KryptonCode · www.kryptoncode.xyz</sub>
 
 </div>
