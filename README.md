@@ -10,12 +10,13 @@
 An immersive, scroll-driven space-exploration landing page — from Earth departure to the Galilean moons.</p>
 
 <p>
-  <img alt="Status" src="https://img.shields.io/badge/status-prototype-5B7CFF?style=flat-square" />
-  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r128-5B7CFF?style=flat-square&logo=three.js&logoColor=white" />
+  <img alt="Status" src="https://img.shields.io/badge/status-prototype-F0B25A?style=flat-square" />
+  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r128-F0B25A?style=flat-square&logo=three.js&logoColor=white" />
   <img alt="GSAP" src="https://img.shields.io/badge/GSAP-3.12.5-88CE02?style=flat-square&logo=greensock&logoColor=white" />
-  <img alt="Lenis" src="https://img.shields.io/badge/Lenis-1.1.14-8B5CF6?style=flat-square" />
-  <img alt="No build step" src="https://img.shields.io/badge/build-none%20·%20static-0A0A0C?style=flat-square" />
-  <a href="https://www.kryoncode.xyz"><img alt="Made by KryptonCode" src="https://img.shields.io/badge/made%20by-KryptonCode-5B7CFF?style=flat-square" /></a>
+  <img alt="Lenis" src="https://img.shields.io/badge/Lenis-1.1.14-F0B25A?style=flat-square" />
+  <img alt="Static" src="https://img.shields.io/badge/build-none%20·%20static-0A0A0C?style=flat-square" />
+  <img alt="Deploy" src="https://img.shields.io/badge/deploy-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+  <a href="https://www.kryoncode.xyz"><img alt="Made by KryptonCode" src="https://img.shields.io/badge/made%20by-KryptonCode-F0B25A?style=flat-square" /></a>
 </p>
 
 </div>
@@ -26,7 +27,7 @@ An immersive, scroll-driven space-exploration landing page — from Earth depart
 
 **Caelum** is a fictional deep-space exploration company — *"We build the vessels, stations and signal networks that carry humanity past the edge of the map, and bring it back."*
 
-This repository holds the **landing-page prototype**: a single, self-contained page that plays like a cinematic mission briefing. A live WebGL starfield sits behind buttery smooth-scroll, and every section is choreographed with scroll-triggered motion — a launch countdown, a fleet reveal, a draggable orbit, and a signal-network map stretching to the Galilean moons.
+This repository holds the **landing-page prototype**: a single, self-contained page that plays like a cinematic mission briefing. A live WebGL starfield and a slowly turning Earth sit behind buttery smooth-scroll, and every section is choreographed with motion — a launch countdown, a fleet reveal, a draggable orbit, and a signal-network map stretching to the Galilean moons.
 
 It is a **design + front-end craft piece**: no framework app, no build step — just a hand-tuned document that runs straight in the browser.
 
@@ -34,15 +35,15 @@ It is a **design + front-end craft piece**: no framework app, no build step — 
 
 ## ✦ Features
 
-- 🌌 **WebGL starfield** — a depth-parallaxed particle field rendered with **Three.js**, drifting behind the entire page.
+- 🌍 **Live WebGL scene** — a depth-parallaxed starfield and a rotating Earth rendered with **Three.js**.
 - 🪐 **Draggable orbit** — *"drag to take the helm"* — an interactive orbital system you can throw and let settle.
 - 🛰️ **Signal-network map** — five installations holding the lattice open, from the ground to the Galilean moons.
 - ⏱️ **Live launch countdown** — a real ticking `T–` clock to the next window (VELA-9 · Europa Relay · LC-39A).
 - 🎞️ **Scroll choreography** — headlines, cards and telemetry reveal in sequence via **GSAP + ScrollTrigger**.
 - 🧭 **Buttery smooth scroll** — inertial scrolling powered by **Lenis**.
 - 🧲 **Magnetic buttons, 3D tilt cards, custom cursor glow** — tactile micro-interactions throughout.
-- 🎛️ **Animated nebulae & telemetry grid** — living background gradients and a slow-drifting grid.
-- 📱 **Responsive & glassmorphic** — a floating blurred nav and fluid `clamp()`-based type that scales from phone to widescreen.
+- 🎛️ **Living background** — animated nebulae, a drifting telemetry grid, and switchable accents.
+- 📱 **Responsive & glassmorphic** — a floating blurred nav and fluid `clamp()`-based type from phone to widescreen.
 
 ---
 
@@ -70,27 +71,29 @@ The page is one continuous flight, told across nine screens:
 
 | Layer | Tooling |
 |-------|---------|
-| **3D / WebGL** | [Three.js](https://threejs.org/) `r128` — starfield & orbital scene |
+| **3D / WebGL** | [Three.js](https://threejs.org/) `r128` — starfield, Earth & orbital scene |
 | **Animation** | [GSAP](https://gsap.com/) `3.12.5` + **ScrollTrigger** — scroll-linked motion |
 | **Smooth scroll** | [Lenis](https://github.com/darkroomengineering/lenis) `1.1.14` |
 | **Type** | [Clash Display](https://www.fontshare.com/fonts/clash-display) + [Satoshi](https://www.fontshare.com/fonts/satoshi) (Fontshare) · [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) |
-| **Runtime** | `support.js` — a lightweight document runtime that hydrates the `.dc.html` template |
+| **Runtime** | `support.js` — a lightweight document runtime that auto-loads React 18 (UMD) from CDN and hydrates the page |
 | **Build** | None. Static HTML + CDN libraries. |
 
 ---
 
 ## ✦ Design System
 
-A dark, mission-control palette — near-black canvas, cool periwinkle signal accent, a whisper of nebula violet.
+A dark, mission-control palette — a near-black void, a warm gold signal accent, and Earth-blue atmosphere.
 
 | Swatch | Token | Hex | Role |
 |:------:|-------|-----|------|
 | ![](https://placehold.co/22x22/050505/050505.png) | Void | `#050505` | Page canvas |
 | ![](https://placehold.co/22x22/EDEDF0/EDEDF0.png) | Ink | `#EDEDF0` | Primary text |
-| ![](https://placehold.co/22x22/5B7CFF/5B7CFF.png) | Accent | `#5B7CFF` | Signal / links / glow |
-| ![](https://placehold.co/22x22/8B5CF6/8B5CF6.png) | Nebula | `#8B5CF6` | Secondary atmosphere |
+| ![](https://placehold.co/22x22/F0B25A/F0B25A.png) | Accent | `#F0B25A` | Signal · links · glow *(default)* |
+| ![](https://placehold.co/22x22/4C86FF/4C86FF.png) | Earth | `#4C86FF` | Atmosphere / globe |
 | ![](https://placehold.co/22x22/A5A5AF/A5A5AF.png) | Dim | `#A5A5AF` | Supporting copy |
 | ![](https://placehold.co/22x22/6C6C76/6C6C76.png) | Faint | `#6C6C76` | Telemetry / labels |
+
+The accent is themeable — the runtime also ships blue `#5B7CFF`, violet `#9D7BFF` and cyan `#38E1FF` as alternates.
 
 **Type:** Clash Display for display headlines · Satoshi for body · IBM Plex Mono for eyebrows, labels and telemetry.
 
@@ -105,12 +108,12 @@ git clone https://github.com/ryhnxyz/caelum-space.git
 cd caelum-space
 ```
 
-**Quickest** — open the file directly in a modern browser:
+**Quickest** — open the entry file directly in a modern browser:
 
 ```bash
-open "caelum-landing.dc.html"      # macOS
-xdg-open "caelum-landing.dc.html"  # Linux
-start "caelum-landing.dc.html"     # Windows
+open index.html      # macOS
+xdg-open index.html  # Linux
+start index.html     # Windows
 ```
 
 **Recommended** — serve the folder (a couple of interactions behave best over `http://`):
@@ -120,7 +123,23 @@ npx serve .
 # then open the printed http://localhost:… URL
 ```
 
-> **Note** — keep `support.js` next to `caelum-landing.dc.html`; the page loads it relatively. Three.js, GSAP and Lenis load from CDN, so an internet connection is needed on first paint.
+> **Note** — keep `support.js` next to `index.html`; the page loads it relatively. Three.js, GSAP, Lenis and React load from CDN, so an internet connection is needed on first paint.
+
+---
+
+## ✦ Deploy
+
+The site is fully static with `index.html` at the repo root, so it hosts anywhere with **zero configuration**.
+
+**Vercel** — import the repo and deploy. No build step needed:
+
+| Setting | Value |
+|---------|-------|
+| Framework Preset | **Other** |
+| Build Command | *(leave empty)* |
+| Output Directory | *(leave empty / repo root)* |
+
+The entry `index.html` is served at `/` automatically. Works the same on **Netlify**, **Cloudflare Pages**, or **GitHub Pages**.
 
 ---
 
@@ -128,10 +147,10 @@ npx serve .
 
 ```text
 caelum-space/
-├─ caelum-landing.dc.html   # the page — markup, styles & scene logic
-├─ support.js               # document runtime that hydrates the template
+├─ index.html      # the landing page (design-canvas export) — site entry point
+├─ support.js      # dc-runtime: auto-loads React from CDN, hydrates the page
 ├─ assets/
-│  └─ banner.svg            # the hero banner in this README
+│  └─ banner.svg   # the hero banner in this README
 └─ README.md
 ```
 
@@ -139,7 +158,7 @@ caelum-space/
 
 ## ✦ Roadmap
 
-- [ ] Ship it live on GitHub Pages
+- [ ] Publish the live URL in this README
 - [ ] Self-host fonts & libraries for full offline / no-CDN loading
 - [ ] A `prefers-reduced-motion` low-motion mode
 - [ ] Lighthouse & performance pass
@@ -155,7 +174,7 @@ Designed & built by **[KryptonCode](https://www.kryoncode.xyz)**.
 
 **✦ CAELUM** — *Beyond Every Horizon*
 
-[![Visit KryptonCode](https://img.shields.io/badge/www.kryoncode.xyz-5B7CFF?style=for-the-badge&logoColor=white)](https://www.kryoncode.xyz)
+[![Visit KryptonCode](https://img.shields.io/badge/www.kryoncode.xyz-F0B25A?style=for-the-badge&logoColor=black)](https://www.kryoncode.xyz)
 
 <sub>Crafted by KryptonCode · www.kryoncode.xyz</sub>
 

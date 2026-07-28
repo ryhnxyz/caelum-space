@@ -1,47 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Caelum — Beyond Every Horizon">
   <defs>
-    <radialGradient id="neb1" cx="14%" cy="8%" r="55%">
-      <stop offset="0%" stop-color="#5B7CFF" stop-opacity="0.30"/>
-      <stop offset="60%" stop-color="#5B7CFF" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#5B7CFF" stop-opacity="0"/>
+    <radialGradient id="neb1" cx="14%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#F0B25A" stop-opacity="0.26"/>
+      <stop offset="60%" stop-color="#F0B25A" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#F0B25A" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="neb2" cx="88%" cy="96%" r="60%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.26"/>
-      <stop offset="55%" stop-color="#8B5CF6" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    <radialGradient id="neb2" cx="86%" cy="92%" r="60%">
+      <stop offset="0%" stop-color="#4C86FF" stop-opacity="0.20"/>
+      <stop offset="55%" stop-color="#4C86FF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#4C86FF" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="beacon" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#9DB2FF" stop-opacity="0.9"/>
-      <stop offset="45%" stop-color="#5B7CFF" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#5B7CFF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FFDFA6" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#F0B25A" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#F0B25A" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="planetglow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5B7CFF" stop-opacity="0.55"/>
-      <stop offset="40%" stop-color="#5B7CFF" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#5B7CFF" stop-opacity="0"/>
+    <radialGradient id="earth" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#AFD4F2"/>
+      <stop offset="30%" stop-color="#4F80BE"/>
+      <stop offset="66%" stop-color="#1B3355"/>
+      <stop offset="100%" stop-color="#070D18"/>
+    </radialGradient>
+    <radialGradient id="atmo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4C86FF" stop-opacity="0"/>
+      <stop offset="74%" stop-color="#4C86FF" stop-opacity="0"/>
+      <stop offset="84%" stop-color="#4C86FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#4C86FF" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="arc" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5B7CFF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#9DB2FF" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#5B7CFF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#F0B25A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFE1AE" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F0B25A" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="horizon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5B7CFF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5B7CFF" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#5B7CFF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#F0B25A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F0B25A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#F0B25A" stop-opacity="0"/>
     </linearGradient>
+    <radialGradient id="sparkglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F0B25A" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F0B25A" stop-opacity="0"/>
+    </radialGradient>
     <linearGradient id="wm" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#C6C9D6"/>
+      <stop offset="100%" stop-color="#C9CCD6"/>
     </linearGradient>
   </defs>
 
-  <!-- base -->
   <rect width="1200" height="420" fill="#050505"/>
   <rect width="1200" height="420" fill="url(#neb1)"/>
   <rect width="1200" height="420" fill="url(#neb2)"/>
 
-  <!-- starfield -->
   <g>
     <circle cx="1091.7" cy="123.5" r="0.85" fill="#EDEDF0" opacity="0.25"/>
     <circle cx="1194.1" cy="65.0" r="1.11" fill="#EDEDF0" opacity="0.57"/>
@@ -178,7 +187,7 @@
     <circle cx="631.9" cy="294.7" r="0.78" fill="#EDEDF0" opacity="0.09"/>
     <circle cx="142.3" cy="64.3" r="1.30" fill="#EDEDF0" opacity="0.30"/>
     <circle cx="1048.0" cy="165.5" r="0.94" fill="#EDEDF0" opacity="0.16"/>
-    <circle cx="655.1" cy="170.3" r="0.22" fill="#EDEDF0" opacity="0.06"/>
+    <circle cx="655.1" cy="170.3" r="0.32" fill="#EDEDF0" opacity="0.20"/>
     <circle cx="485.6" cy="381.0" r="1.05" fill="#EDEDF0" opacity="0.76"/>
     <circle cx="1127.3" cy="326.0" r="0.74" fill="#EDEDF0" opacity="0.81"/>
     <circle cx="1102.1" cy="288.3" r="1.18" fill="#EDEDF0" opacity="0.20"/>
@@ -193,37 +202,35 @@
     <circle cx="881.3" cy="9.3" r="0.61" fill="#EDEDF0" opacity="0.41"/>
     <circle cx="584.1" cy="231.3" r="0.82" fill="#EDEDF0" opacity="0.09"/>
     <circle cx="214.5" cy="416.3" r="0.75" fill="#EDEDF0" opacity="0.73"/>
-    <circle cx="915" cy="120" r="10.8" fill="url(#beacon)"/>
-    <circle cx="915" cy="120" r="1.8" fill="#CBD6FF" opacity="0.95"/>
-    <circle cx="1060" cy="300" r="9.6" fill="url(#beacon)"/>
-    <circle cx="1060" cy="300" r="1.6" fill="#CBD6FF" opacity="0.95"/>
-    <circle cx="770" cy="250" r="8.4" fill="url(#beacon)"/>
-    <circle cx="770" cy="250" r="1.4" fill="#CBD6FF" opacity="0.95"/>
-    <circle cx="1130" cy="150" r="9.0" fill="url(#beacon)"/>
-    <circle cx="1130" cy="150" r="1.5" fill="#CBD6FF" opacity="0.95"/>
+    <circle cx="838" cy="96" r="9.6" fill="url(#beacon)"/>
+    <circle cx="838" cy="96" r="1.6" fill="#FFE9C7" opacity="0.95"/>
+    <circle cx="1092" cy="300" r="9.0" fill="url(#beacon)"/>
+    <circle cx="1092" cy="300" r="1.5" fill="#FFE9C7" opacity="0.95"/>
+    <circle cx="760" cy="132" r="8.4" fill="url(#beacon)"/>
+    <circle cx="760" cy="132" r="1.4" fill="#FFE9C7" opacity="0.95"/>
+    <circle cx="1136" cy="150" r="8.4" fill="url(#beacon)"/>
+    <circle cx="1136" cy="150" r="1.4" fill="#FFE9C7" opacity="0.95"/>
   </g>
 
-  <!-- orbital system (right) -->
   <g>
-    <ellipse cx="975" cy="205" rx="210" ry="78" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" transform="rotate(-18 975 205)"/><ellipse cx="975" cy="205" rx="150" ry="55" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" transform="rotate(-18 975 205)"/><ellipse cx="975" cy="205" rx="95" ry="34" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="1" transform="rotate(-18 975 205)"/><ellipse cx="975" cy="205" rx="210" ry="78" fill="none" stroke="url(#arc)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="150 500" transform="rotate(-18 975 205)"/>
-    <circle cx="975" cy="205" r="64" fill="url(#planetglow)"/><circle cx="975" cy="205" r="21" fill="#0A0A0F"/><circle cx="975" cy="205" r="21" fill="none" stroke="#5B7CFF" stroke-opacity="0.55" stroke-width="1"/><circle cx="968" cy="198" r="21" fill="#5B7CFF" fill-opacity="0.14"/><circle cx="790.0" cy="224.1" r="16" fill="url(#beacon)"/><circle cx="790.0" cy="224.1" r="3.4" fill="#EAF0FF"/>
+    <ellipse cx="968" cy="232" rx="150" ry="52" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" transform="rotate(-20 968 232)"/><ellipse cx="968" cy="232" rx="198" ry="70" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" transform="rotate(-20 968 232)"/><ellipse cx="968" cy="232" rx="198" ry="70" fill="none" stroke="url(#arc)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="150 520" transform="rotate(-20 968 232)"/>
+    <circle cx="968" cy="232" r="92" fill="url(#atmo)"/><circle cx="968" cy="232" r="74" fill="url(#earth)"/><circle cx="968" cy="232" r="74" fill="none" stroke="#F0B25A" stroke-opacity="0.35" stroke-width="1.4"/><path d="M 915 195 A 74 74 0 0 1 994 164" fill="none" stroke="#F0B25A" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="785.0" cy="273.1" r="15" fill="url(#beacon)"/><circle cx="785.0" cy="273.1" r="3.2" fill="#FFF3E0"/>
   </g>
 
-  <!-- faint horizon -->
   <path d="M0 402 Q600 372 1200 402" fill="none" stroke="url(#horizon)" stroke-width="1.2"/>
 
-  <!-- text -->
   <g font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
     <g font-family="'SFMono-Regular',Consolas,'IBM Plex Mono',monospace">
-      <circle cx="74" cy="141" r="3.2" fill="#5B7CFF"/>
+      <circle cx="74" cy="141" r="3.2" fill="#F0B25A"/>
       <text x="90" y="145" fill="#A5A5AF" font-size="12.5" letter-spacing="4.2">EARTH DEPARTURE PROGRAM — CYCLE 07</text>
     </g>
     <g>
-      <circle cx="84" cy="212" r="17" fill="url(#planetglow)"/>
-      <path d="M84 193 C84 205 87 208 99 212 C87 216 84 219 84 231 C84 219 81 216 69 212 C81 208 84 205 84 193 Z" fill="#5B7CFF"/>
+      <circle cx="84" cy="212" r="17" fill="url(#sparkglow)"/>
+      <path d="M84 193 C84 205 87 208 99 212 C87 216 84 219 84 231 C84 219 81 216 69 212 C81 208 84 205 84 193 Z" fill="#F0B25A"/>
     </g>
     <text x="116" y="242" font-size="82" font-weight="800" letter-spacing="2" fill="url(#wm)">CAELUM</text>
-    <text x="74" y="292" font-size="23" font-weight="600" letter-spacing="9" fill="#C9CCD8">BEYOND EVERY <tspan fill="#5B7CFF">HORIZON</tspan></text>
+    <text x="74" y="292" font-size="23" font-weight="600" letter-spacing="9" fill="#C9CCD8">BEYOND EVERY <tspan fill="#F0B25A">HORIZON</tspan></text>
     <g font-family="'SFMono-Regular',Consolas,'IBM Plex Mono',monospace">
       <text x="74" y="338" fill="#6C6C76" font-size="12" letter-spacing="3.6">ALT 408 KM &#8212;&#8212;&#8212; ORBITAL INSERTION &#8212;&#8212;&#8212; LEO &#160;&#160;·&#160;&#160; T&#8211;42:07:12:44</text>
     </g>
