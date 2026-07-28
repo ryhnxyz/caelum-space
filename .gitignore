@@ -1,0 +1,18 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+.idea/
+.vscode/
+*.swp
+
+# dependencies / build (none used today, kept for future)
+node_modules/
+dist/
+.cache/
+
+# logs & env
+*.log
+.env
+.env.*
